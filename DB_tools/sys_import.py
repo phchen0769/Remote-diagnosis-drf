@@ -44,6 +44,7 @@ def import_router():
             name=router["name"],
             title=router["title"],
             icon=router["icon"],
+            hidden=router["hidden"],
         )
 
 

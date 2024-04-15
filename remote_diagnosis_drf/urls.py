@@ -42,13 +42,6 @@ from apps.user.views import (
     RouterViewSet,
 )
 
-# 从score app中导入viewset
-from apps.score.views import (
-    StudentViewSet,
-    AnswerViewSet,
-    QuestionViewSet,
-    PaperViewSet,
-)
 
 # 从article app中导入ArticleViewSet
 from apps.article.views import ArticleViewSet, ChapterViewSet
@@ -71,12 +64,6 @@ router.register("users", UserViewSet, basename="users")
 # router.register("user-role", UserViewSet, basename="user-role")
 # router.register("register", CurrentUserViewSet, basename="register")
 
-# score app的url配置
-router.register("students", StudentViewSet, basename="students")
-router.register("answers", AnswerViewSet, basename="answers")
-router.register("questions", QuestionViewSet, basename="questions")
-router.register("papers", PaperViewSet, basename="papers")
-
 # article app的url配置
 router.register("articles", ArticleViewSet, basename="articles")
 router.register("chapters", ChapterViewSet, basename="chapters")
@@ -87,7 +74,7 @@ router.register("features", FeatureViewSet, basename="features")
 
 urlpatterns = [
     # api文档功能
-    path("docs", include_docs_urls(title="五育并举系统")),
+    path("docs", include_docs_urls(title="remote_diagnosis_drf")),
     # api页面的登录功能
     path("api-auth", include("rest_framework.urls")),
     # api页面的根路径
