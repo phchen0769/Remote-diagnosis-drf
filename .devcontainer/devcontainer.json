@@ -30,9 +30,7 @@
 				"hlrossato.vscode-drf",
 				"akamud.vscode-theme-onedark",
 				"thebarkman.vscode-djaneiro",
-				"GitHub.copilot",
-				"BenjaminBenais.copilot-theme",
-				"GitHub.copilot-chat"
+				"BenjaminBenais.copilot-theme"
 			]
 		}
 	},
