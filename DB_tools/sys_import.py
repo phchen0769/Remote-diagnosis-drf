@@ -12,10 +12,12 @@ from apps.user.models import Router, Permission, Role, UserProfile
 from DB_tools.sys_router import router_datas
 
 # 导入权限数据
-from DB_tools.sys_permission import permission_datas
+# from DB_tools.sys_permission import permission_datas
+from DB_tools.sys_permission_en import permission_datas
 
 # 导入角色数据
-from DB_tools.sys_role import role_datas
+# from DB_tools.sys_role import role_datas
+from DB_tools.sys_role_en import role_datas
 
 # 导入用户数据
 from DB_tools.sys_user import user_datas
@@ -65,16 +67,26 @@ def import_permission():
 # 导入用户数据
 def import_user():
     for user in user_datas:
-        UserProfile.objects.create(
-            id=user["id"],
-            username=user["username"],
-            password=user["password"],
-            email=user["email"],
-            mobile=user["mobile"],
-            # is_active=user["is_active"],
-            # is_staff=user["is_staff"],
-            # is_superuser=user["is_superuser"],
-        )
+        if user.get("avatar"):
+            UserProfile.objects.create(
+                id=user["id"],
+                username=user["username"],
+                password=user["password"],
+                email=user["email"],
+                mobile=user["mobile"],
+                avatar=user["avatar"],
+            )
+        else:
+            UserProfile.objects.create(
+                id=user["id"],
+                username=user["username"],
+                password=user["password"],
+                email=user["email"],
+                mobile=user["mobile"],
+                # is_active=user["is_active"],
+                # is_staff=user["is_staff"],
+                # is_superuser=user["is_superuser"],
+            )
 
 
 # 导入角色数据

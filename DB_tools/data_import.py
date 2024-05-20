@@ -11,7 +11,8 @@ from apps.feature.models import Feature
 from apps.article.models import Chapter, Article
 
 # 导入功能数据
-from DB_tools.data_features import features
+# from DB_tools.data_features import features
+from DB_tools.data_features_en import features
 
 # 导入章节数据
 from DB_tools.data_chapters import chapters
@@ -20,7 +21,8 @@ from DB_tools.data_chapters import chapters
 from apps.user.models import UserProfile
 
 # 导入文章数据
-from DB_tools.data_articles import articles
+# from DB_tools.data_articles import articles
+from DB_tools.data_articles_en import articles
 
 
 # 导入功能数据

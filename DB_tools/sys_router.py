@@ -54,7 +54,7 @@ router_datas = [
         "redirect": None,
         "hidden": 0,
         "name": None,
-        "title": "roleList",
+        "title": "roleManage",
         "icon": "role",
     },
     {
@@ -65,7 +65,7 @@ router_datas = [
         "redirect": None,
         "hidden": 0,
         "name": None,
-        "title": "permissionList",
+        "title": "permissionManage",
         "icon": "permission",
     },
     # 业务
@@ -77,7 +77,7 @@ router_datas = [
         "redirect": "/article/ranking",
         "hidden": 0,
         "name": "articleRanking",
-        "title": "article",
+        "title": "record",
         "icon": "article",
     },
     {
@@ -88,7 +88,7 @@ router_datas = [
         "redirect": "/article/ranking",
         "hidden": 0,
         "name": "articleRanking",
-        "title": "articleRanking",
+        "title": "recordRanking",
         "icon": "article-ranking",
     },
     {
@@ -99,7 +99,7 @@ router_datas = [
         "redirect": None,
         "hidden": True,
         "name": None,
-        "title": "articleDetail",
+        "title": "recordDetail",
         "icon": None,
     },
     {
@@ -110,7 +110,7 @@ router_datas = [
         "redirect": None,
         "hidden": 0,
         "name": None,
-        "title": "articleCreate",
+        "title": "recordCreate",
         "icon": "article-create",
     },
     {
@@ -121,7 +121,7 @@ router_datas = [
         "redirect": None,
         "hidden": True,
         "name": None,
-        "title": "articleEditor",
+        "title": "recordEditor",
         "icon": "article-create",
     },
 ]
