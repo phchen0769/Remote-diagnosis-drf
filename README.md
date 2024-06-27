@@ -6,8 +6,12 @@
 # requirements.txt为项目需要安装的依赖包
 
 
-# 运行数据库
+# 运行Mariadb数据库
 # docker run -d --name Mariadb -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -v /Volumes/myDriver/github/db:/var/lib/mysql mariadb:latest
+
+# 运行postgre数据库
+# docker run -d --name=Postgres -p 5432:5432 -v /Volumes/myDriver/github/db:/var/lib/postgresql/data -e POSTGRES_PASSWORD=123456 postgres:latest
+
 
 # 运行项目
 # python manage.py runserver 
