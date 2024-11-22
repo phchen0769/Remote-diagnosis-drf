@@ -73,10 +73,13 @@ router.register("features", FeatureViewSet, basename="features")
 
 
 urlpatterns = [
-    # api文档功能
-    path("docs", include_docs_urls(title="remote_diagnosis_drf")),
+    # api文档功能, 允许任何人访问
+    path(
+        "docs",
+        include_docs_urls(title="remote_diagnosis_drf", permission_classes=[]),
+    ),
     # api页面的登录功能
-    path("api-auth", include("rest_framework.urls")),
+    # path("api-auth", include("rest_framework.urls")),
     # api页面的根路径
     path("api/", include(router.urls)),
     # simplejwt 验证用户名密码，并产生token
