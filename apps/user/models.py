@@ -125,7 +125,7 @@ class UserProfile(AbstractUser):
         help_text="姓名",
     )
     avatar = models.CharField(
-        max_length=50,
+        max_length=200,
         verbose_name="用户头像",
         help_text="用户头像",
         default="https://m.imooc.com/static/wap/static/common/img/logo-small@2x.png",

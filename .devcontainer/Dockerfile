@@ -15,8 +15,8 @@ RUN apk add python3 \
 	python3-dev \
 	gcc \
 	g++ \
-	mariadb-connector-c-dev \
-	mariadb-dev \
+	# mariadb-connector-c-dev \
+	# mariadb-dev \
 	linux-headers \
 	pcre-dev \
 	musl-dev \

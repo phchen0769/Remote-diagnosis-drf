@@ -97,22 +97,21 @@ AUTHENTICATION_BACKENDS = (
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
-}
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
 
-
+# 使用mariadb数据库
 # DATABASES = {
 #     "default": {
 #         "ENGINE": "django.db.backends.mysql",  # 使用mysql数据库
-#         "NAME": "wybj_drf",  # 要连接的数据库
+#         "NAME": "Remote_diagnosis",  # 要连接的数据库
 #         "USER": "root",  # 链接数据库的用于名
 #         "PASSWORD": "123456",  # 链接数据库的用于名
-#         # "HOST": "10.165.27.210",  # mysql服务监听的ip
-#         "HOST": "192.168.12.7",
+#         "HOST": "10.165.27.210",  # mysql服务监听的ip
 #         "PORT": 3306,  # mysql服务监听的端口
 #         "ATOMIC_REQUEST": True,  # 设置为True代表同一个http请求所对应的所有sql都放在一个事务中执行
 #         # (要么所有都成功，要么所有都失败)，这是全局性的配置，如果要对某个
@@ -122,6 +121,23 @@ DATABASES = {
 #         },
 #     }
 # }
+
+# 使用postgre数据库
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",  # 使用PostgreSQL数据库
+        "NAME": "remote_diagnosis",  # 要连接的数据库名
+        "USER": "postgres",  # 连接数据库的用户名
+        "PASSWORD": "123456",  # 连接数据库的密码
+        "HOST": "10.165.27.210",  # PostgreSQL服务监听的IP地址
+        "PORT": 5432,  # PostgreSQL服务监听的端口，默认是5432
+        "ATOMIC_REQUEST": True,  # 同样可以启用事务性设置
+        "OPTIONS": {
+            # 根据需要设置连接的其他选项，例如：
+            # "sslmode": "require",  # 启用SSL连接
+        },
+    }
+}
 
 
 # Password validation

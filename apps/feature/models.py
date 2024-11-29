@@ -9,7 +9,7 @@ class Feature(models.Model):
     )
     percentage = models.IntegerField(default=0, verbose_name="进度", help_text="进度")
     content = models.CharField(
-        null=True, max_length=300, verbose_name="内容", help_text="内容"
+        null=True, max_length=2000, verbose_name="内容", help_text="内容"
     )
     add_time = models.DateTimeField(default=datetime.now, verbose_name="发布时间")
 

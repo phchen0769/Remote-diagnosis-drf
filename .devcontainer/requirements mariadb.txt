@@ -14,6 +14,6 @@ crispy_bootstrap3
 coreapi
 django-guardian  
 Djangorestframework
-psycopg2-binary
+mysqlclient
 django-cors-headers
 djangorestframework-simplejwt

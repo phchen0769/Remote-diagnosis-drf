@@ -26,7 +26,7 @@ class Article(models.Model):
         null=True, max_length=100, verbose_name="描述", help_text="描述"
     )
     content = models.CharField(
-        null=True, max_length=300, verbose_name="文章内容", help_text="文章内容"
+        null=True, max_length=2000, verbose_name="文章内容", help_text="文章内容"
     )
     public_date = models.DateField(
         default=date.today,
@@ -52,7 +52,7 @@ class Chapter(models.Model):
         null=True, max_length=40, verbose_name="章节", help_text="章节"
     )
     content = models.CharField(
-        null=True, max_length=300, verbose_name="内容", help_text="内容"
+        null=True, max_length=2000, verbose_name="内容", help_text="内容"
     )
     add_time = models.DateTimeField(default=datetime.now, verbose_name="发布时间")
 
