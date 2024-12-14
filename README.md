@@ -11,6 +11,8 @@
 
 # 运行postgre数据库
 # docker run -d --name Postgres -p 5432:5432 -e POSTGRES_PASSWORD=123456 -v /Volumes/myDriver/github/db/postgresql:/var/lib/postgresql/data postgres:latest
+# 或
+# docker run -d --name Postgres -p 5432:5432 -e POSTGRES_PASSWORD=123456 -v /Users/fedorov/github/db/postgresql:/var/lib/postgresql/data postgres:latest
 
 ############### 2 #################
 # 创建数据库 Mariadb
@@ -18,7 +20,7 @@
 # 字符集： utf8mb4
 # 排序规则：utf8mb4_general_ci
 
-# 创建数据库 Postgre
+# 创建数据库 Postgres
 # 数据库名：remote_diagnosis
 # 所有者：postgres
 # 模版：postgres
