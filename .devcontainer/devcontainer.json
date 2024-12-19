@@ -31,7 +31,8 @@
 				"akamud.vscode-theme-onedark",
 				"thebarkman.vscode-djaneiro",
 				"BenjaminBenais.copilot-theme",
-				"AMiner.codegeex"
+				"GitHub.copilot-chat",
+				"GitHub.copilot"
 			]
 		}
 	},
