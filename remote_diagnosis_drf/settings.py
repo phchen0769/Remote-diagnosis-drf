@@ -126,10 +126,10 @@ AUTHENTICATION_BACKENDS = (
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",  # 使用PostgreSQL数据库
-        "NAME": "remote_diagnosis",  # 要连接的数据库名
-        "USER": "postgres",  # 连接数据库的用户名
-        "PASSWORD": "123456",  # 连接数据库的密码
-        "HOST": "192.168.12.166",  # PostgreSQL服务监听的IP地址
+        "NAME": "DATACENTER",  # 要连接的数据库名
+        "USER": "ftpuser",  # 连接数据库的用户名
+        "PASSWORD": "admin@123",  # 连接数据库的密码
+        "HOST": "10.165.27.210",  # PostgreSQL服务监听的IP地址
         "PORT": 5432,  # PostgreSQL服务监听的端口，默认是5432
         "ATOMIC_REQUEST": True,  # 同样可以启用事务性设置
         "OPTIONS": {
